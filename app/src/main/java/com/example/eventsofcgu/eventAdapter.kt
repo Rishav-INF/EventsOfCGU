@@ -166,13 +166,11 @@ class eventAdapter(private val context: Context, val eventdata : List<EventRecyl
                     }
                     .addOnFailureListener { e ->
                         Log.e(TAG, "Failed to register user $username for event $eventName: ${e.message}")
-                        // Handle failure if needed
                     }
             }
 
             override fun onCancelled(error: DatabaseError) {
                 Log.e(TAG, "Error fetching registered users for event $eventName: ${error.message}")
-                // Handle cancellation if needed
             }
         })
     }
