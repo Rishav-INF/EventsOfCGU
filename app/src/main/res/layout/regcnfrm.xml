@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="350dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="40dp"
+    android:background="@drawable/border"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/moreinfobg"
+        android:orientation="vertical"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="10dp">
+
+        <TextView
+            android:id="@+id/areyousure"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/audiowide"
+            android:gravity="center"
+            android:paddingVertical="10dp"
+            android:text="Are you sure you want to register?"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/eventdesc"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="54dp"
+            android:layout_height="50dp"
+            android:fontFamily="@font/homenaje"
+            android:gravity="center"
+            android:text="Enter your password"
+            android:textSize="20dp"
+            android:textColor="@color/black" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/loginname"
+            android:layout_width="267dp"
+            android:layout_height="57dp"
+            android:layout_marginLeft="50dp"
+            android:width="60sp"
+            android:inputType="text"
+            android:padding="5sp"
+            android:textSize="30sp"
+            app:helperText="Name"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.611"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.534">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/pass"
+                android:layout_width="227dp"
+                android:layout_height="41dp"
+                android:hint="PASSWORD"
+                android:padding="1sp"
+                android:textColor="@color/white" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/typeofevnt"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:textSize="15dp"
+            android:layout_marginLeft="55dp"
+            android:fontFamily="@font/homenaje"
+            android:gravity="left"
+            android:layout_marginTop="15dp"
+            android:text="IF YOUR EVENT IS UNDER : \nLIVE EVENTS - ENTER : 1 \nUPCOMING EVENTS - ENTER : 2"
+            android:textColor="@color/black" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/oneortwo"
+            android:layout_width="267dp"
+            android:layout_height="57dp"
+            android:layout_marginLeft="50dp"
+            android:width="60sp"
+            android:inputType="text"
+            android:padding="5sp"
+            android:textSize="30sp"
+            app:helperText="Name"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.611"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.534">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/liveorupc"
+                android:layout_width="227dp"
+                android:layout_height="41dp"
+                android:hint="Enter 1 OR 2"
+                android:padding="1sp"
+                android:textColor="@color/white" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

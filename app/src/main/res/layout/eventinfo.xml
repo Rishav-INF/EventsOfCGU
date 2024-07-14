@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="700dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="40dp"
+    android:background="@drawable/border"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="310dp"
+        android:layout_height="620dp"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="10dp"
+        android:elevation="30dp"
+        android:background="@drawable/moreinfobg">
+
+        <TextView
+            android:id="@+id/eventTitle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:fontFamily="@font/audiowide"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:paddingVertical="10dp"
+            android:text="Event Title" />
+
+        <TextView
+            android:id="@+id/eventdesc"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="500dp"
+            android:fontFamily="@font/homenaje"
+            android:gravity="center_horizontal"
+            android:text="Event Description"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
